@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    border: 1px solid rgba(4,9,30,0.7);
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('uni.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav{
+    height: 20px;
+    border: 1px solid brown;
+    background-color: brown;
+    position: sticky;
+    top: 0px;
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+  width: 150px;  
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+} 
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}   
+.post{
+    width: 50%;
+  margin-left: 100px;
+   margin-top: 150px;
+}
+.img2{
+    width: 100%;
+}
+.img2 h2{
+    font-size: 42px;
+}
+.img2 p{
+    padding-top: 20px;
+    color: rgb(90, 88, 88);
+    white-space: 3px;
+    line-height: 25px;
+}
+.comment{
+    margin-top: 30px;
+    border: 2px solid gray;
+}
+.comment h3{
+    padding: 30px;
+    font-size: 26px;
+}
+input{
+    padding: 15px;
+    width: 90%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(101, 224, 224);border:none;
+    font-size: 20px;
+    color: black;
+}
+input:hover{
+    border-color: blue;
+    background-color: gainsboro;
+}
+.btn{
+    margin-left: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    border: 1px solid gray;
+    padding: 15px 20px;
+    background: transparent;
+    cursor: pointer;
+    background-color: gray;
+    margin-bottom: 30px;
+}
+.btn:hover{
+    border: 1px solid rgb(124, 124, 250);
+    transition: 0.8s;
+    background-color: rgb(124, 124, 250);
+}
+.tab{
+    width: 32%;
+    float: right;
+    margin-top: -132.1%;
+    margin-right: 90px;
+}
+table{
+    width: 100%;
+}
+.tab h2{
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 15px;
+}
+.about{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+.about h4{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa{
+color: #f44336;
+margin: 0 13px;
+cursor: pointer;
+padding: 18px 0;
+}
+.fa-heart-o{
+    color: #f44336;
+}

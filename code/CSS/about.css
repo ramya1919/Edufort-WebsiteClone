@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    border: 1px solid rgba(4,9,30,0.7);
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url('uni.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav{
+    height: 20px;
+    background-color:brown;
+    position: sticky;
+    top: 0px;
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+  width: 150px;  
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+} 
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}   
+.about{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+.about h4{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.about p{
+    line-height: 25px;
+}
+.icons{
+    margin-top: 30px;
+}
+.icons .fa{
+color: #f44336;
+margin: 0 13px;
+cursor: pointer;
+padding: 18px 0;
+}
+.fa-heart-o{
+    color: #f44336;
+}
+.body2{
+    
+    display: flex;
+    width: 100%;
+    
+}
+.about2{
+    margin-top: 90px;
+    margin-left: 90px;
+    width: 40%;
+}
+.about2 h3{
+    color: rgb(63, 61, 61);
+    font-size: 27px;
+    font-weight: 700;
+}
+.about2 p{
+    color: rgb(71, 69, 69);
+    padding-top: 20px;
+    word-spacing: 3px;
+    line-height: 25px;
+}
+.about3 img{
+    float: right;
+    margin-top: -420px;
+    margin-right: 140px;
+    width: 40%;
+    height: 400px;
+}
+.btn{
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    border: 1px solid red;
+    padding: 15px 20px;
+    background: transparent;
+    cursor: pointer;
+}
+.btn:hover{
+    color: white;
+    border: 1px solid rgb(124, 124, 250);
+    transition: 0.8s;
+    background-color: rgb(124, 124, 250);
+}
